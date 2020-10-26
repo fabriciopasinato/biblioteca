@@ -1,0 +1,33 @@
+<?php
+session_start();
+if ( $_SESSION['usuario'] !== '') {
+    die("Contraseña incorrecta");
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Escuela Nº 6 "Dr. leopoldo chizzini melo"</title>
+        <link rel="stylesheet" href="../static/estilo.css">
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="encabezado">
+                <img src="../static/logo.png" alt="Logo sitio" width="100"> 
+<h1>Escuela Nº 6 "Dr. leopoldo chizzini melo"</h1>
+<h1>contacto</h1>
+<div><a href="https://isp6-sfe.infd.edu.ar/sitio/"><b>Pagina del instituto</b></a></div>
+<div><a href="https://www.facebook.com/profile.php?id=100009516005916"><b>Facebook</b></a></div>
+<div><p>Telefono: 0342-4910921 </p></div>
+<div><p>Direccion: San Martín 1152 – Coronda </p></div>
+<div><p>Horario de Atención: lunes a viernes de 16hs. a 21hs.</p></div>
+
+            <div class="actividad" id="descargar">
+                <p>Última actualización: 29/05/2020 - 14:12hs</p>
+                <script src="../static/scripts.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

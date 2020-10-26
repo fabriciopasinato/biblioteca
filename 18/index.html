@@ -1,0 +1,34 @@
+<?php
+session_start();
+if ( $_SESSION['usuario'] !== '') {
+    die("Contraseña incorrecta");
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Escuela Nº 6 "Dr. leopoldo chizzini melo"</title>
+        <link rel="stylesheet" href="../static/estilo.css">
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="encabezado">
+                <img src="../static/logo.png" alt="Logo sitio" width="100"> 
+<h1>Escuela Nº 6 "Dr. leopoldo chizzini melo"</h1>
+<h1>Informacion del sitio</h1>
+<div><p>El Instituto del Profesorado de Coronda, con mas de 50 años de existencia, es portador de una historia que refleja procesos sociales, políticos y culturales de este tiempo, tanto de nuestro país como de América Latina.
+
+Propone un trabajo proyectivo, colectivo y colaborativo de docentes y estudiantes, buscando utilizar dispositivos y herramientas de la dimensión comunicacional potenciadas con el uso de las Nuevas Tecnologías y espacios de participación, reflexión y construcción de una institución democrática.
+
+«El hombre es hombre, y el mundo es mundo. En la medida en que ambos se encuentran en una relación permanente, el hombre transformando al mundo sufre los efectos de su propia transformación» Paulo Freire.</p></div>
+<div><p>Este sitio es para la libre descarga de informacion. se puede descargar y utilizar todo el material de esta pagina.</p></div>
+
+            <div class="actividad" id="descargar">
+                <p>Última actualización: 29/05/2020 - 14:12hs</p>
+                <script src="../static/scripts.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

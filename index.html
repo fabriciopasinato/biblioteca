@@ -1,0 +1,50 @@
+<?php
+session_start();
+if ( $_SESSION['usuario'] !== '') {
+    die("Contraseña incorrecta");
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Escuela Nº 6 "Dr. leopoldo chizzini melo"</title>
+        <link rel="stylesheet" href="static/estilo.css">
+        
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="encabezado">
+                <img src="static/logo.png" alt="Logo sitio" width="100"> 
+<h1>Biblioteca de la Escuela Nº 6 "Dr. leopoldo chizzini melo"</h1>
+<h2>Elegí la biblioteca a la cual deseas entrar</h2>
+
+            </div>
+            <div class="lista_principal">
+            
+            <div class="materia" style="background-image: url('static/logo.png'" onclick="verCurso(15);">
+                    <p class="nombre">publico</p>
+                </div>
+            
+            <div class="materia" style="background-image: url('static/logo.png'" onclick="verCurso(16);">
+                    <p class="nombre">privado</p>
+                </div>
+            <div class="materia" style="background-image: url('static/recomendaciones.png'" onclick="verCurso(17);">
+                    <p class="nombre">Recomendados</p>
+                </div>
+            <div class="materia" style="background-image: url('static/informacion.png'" onclick="verCurso(18);">
+                    <p class="nombre">Informacion del sitio</p>
+                </div>
+            <div class="materia" style="background-image: url('static/cambio.png'" onclick="verCurso(19);">
+                    <p class="nombre">contacto</p>
+                </div>
+            </div>
+
+            <div class="actividad" id="descargar">
+                <p>Última actualización: 29/07/2020 - 14:12hs</p>
+                <script src="static/scripts.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

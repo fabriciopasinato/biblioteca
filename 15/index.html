@@ -1,0 +1,88 @@
+<?php
+session_start();
+if ( $_SESSION['usuario'] !== '') {
+    die("Contraseña incorrecta");
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Escuela Nº 6 "Dr. leopoldo chizzini melo"</title>
+        <link rel="stylesheet" href="../static/estilo.css">
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="encabezado">
+                <img src="../static/logo.png" alt="Logo sitio" width="100"> 
+<h1>Escuela Nº 6 "Dr. leopoldo chizzini melo"</h1>
+<h1>publico</h1>
+
+            </div>
+            <div class="lista_principal">
+            
+            <div class="materia" style="background-image: url('../static/logos/libro.png')" onclick="verTrabajos(1);">
+                    <p class="nombre_materia">biblioteca</p>
+                    <br> <p class="nombre_docente">pasinato<br>
+                    
+                        2 elementos
+                    
+                    </p>
+                </div>
+                <div id="trabajos1" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(1)">&times;</span>
+                    <br>
+
+                    <h1>biblioteca</h1>
+                    <h2>pasinato</h2>
+                    <h2>fpasinato6@gmail.com</h2>
+                    
+                        
+                        <div class="actividad">                            
+                            <p><strong>libros a descargar</strong></p>
+                            <p>
+                             
+                               publico - 
+                            
+                            (Publicado el 29/5)
+                            
+                            </p>
+                            <a href="epdf.pub_los-mitos-de-la-historia-argentina.pdf" class="boton">
+                                <!-- style="background-color:#2979FF"> -->
+                                Descargar 
+                            </a>
+
+                        </div>
+                        
+                        <div class="actividad">                            
+                            <p><strong>libros a descargar</strong></p>
+                            <p>
+                             
+                               primer - 
+                            
+                            (Publicado el 20/5)
+                            
+                            </p>
+                            <a href="Dialnet-LaHistoriaCulturalEuropea-41382_1.pdf" class="boton">
+                                <!-- style="background-color:#2979FF"> -->
+                                Descargar 
+                            </a>
+
+                        </div>
+                        
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(1)">
+                    Volver
+                </a>
+            </div>
+            
+            </div>
+
+            <div class="actividad" id="descargar">
+                <p>Última actualización: 29/05/2020 - 14:12hs</p>
+                <script src="../static/scripts.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
